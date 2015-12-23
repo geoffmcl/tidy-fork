@@ -1,3 +1,8 @@
+# whitelist
+branches:
+  only:
+    - testing
+ 
 language: c
 compiler:
     -gcc
