@@ -1,3 +1,4 @@
+# master .travis.yml 20151223 16:30
 # whitelist
 branches:
   only:
@@ -16,8 +17,9 @@ addons:
 
 sudo: false
 
-install:
-    - bundle install --gemfile=test/benchmarks/Gemfile
+#install:
+#    - bundle install --gemfile=test/benchmarks/Gemfile
+
 before_script:
     - cd build/cmake
     - cmake ../..
@@ -30,5 +32,3 @@ script:
     - diff -ua testbase tmp
 
 # eof
-
-    
