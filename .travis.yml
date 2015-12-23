@@ -26,6 +26,7 @@ before_script:
     - ls -l ../build/cmake/tidy
     - ls -l ../build/cmake/
 script:
-    ./testall.sh
-    diff -ua testbase tmp
-    
+    - ./testall.sh
+    - diff -ua testbase tmp
+
+# eof
