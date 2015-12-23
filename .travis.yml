@@ -3,7 +3,6 @@
 branches:
   only:
     - master
-    - testing
  
 language: c
 
@@ -20,15 +19,9 @@ sudo: false
 #install:
 #    - bundle install --gemfile=test/benchmarks/Gemfile
 
-before_script:
+script:
     - cd build/cmake
     - cmake ../..
     - make
-    - cd ../../test/
-    - ls -l ../build/cmake/tidy
-    - ls -l ../build/cmake/
-script:
-    - ./testall.sh
-    - diff -ua testbase tmp
 
 # eof
