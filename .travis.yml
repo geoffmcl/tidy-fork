@@ -1,11 +1,11 @@
 # whitelist
 branches:
   only:
+    - master
     - testing
  
 language: c
-compiler:
-    -gcc
+
 rvm:
     - 2.0.0
 addons:
@@ -26,4 +26,9 @@ before_script:
     - ls -l ../build/cmake/tidy
     - ls -l ../build/cmake/
 script:
-    ./testall.sh
+    - ./testall.sh
+    - diff -ua testbase tmp
+
+# eof
+
+    
