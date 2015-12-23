@@ -3,10 +3,11 @@ branches:
   only:
     - master
     - testing
- 
+
 language: c
-compiler:
-    -gcc
+
+# compiler:
+#    -gcc
 rvm:
     - 2.0.0
 addons:
