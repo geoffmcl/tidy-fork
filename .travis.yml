@@ -1,6 +1,7 @@
 # whitelist
 branches:
   only:
+    - master
     - testing
  
 language: c
